@@ -1,0 +1,27 @@
+﻿<Window x:Class="ClosestSports.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClosestSports"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TextBlock x:Name="textBlockSports" HorizontalAlignment="Left" Margin="52,95,0,0" TextWrapping="Wrap" Text="Sports" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockZipCode" HorizontalAlignment="Left" Margin="179,95,0,0" TextWrapping="Wrap" Text="Zip Code" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxZipCode" HorizontalAlignment="Left" Height="23" Margin="147,117,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="textBlockRadius" HorizontalAlignment="Left" Margin="311,95,0,0" TextWrapping="Wrap" Text="Radius" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxRadius" HorizontalAlignment="Left" Height="23" Margin="311,117,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="49"/>
+        <Button x:Name="buttonEnter" Content="Enter" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="214,198,0,0" Click="buttonEnter_Click"/>
+        <ListBox x:Name="listBoxSports" HorizontalAlignment="Left" Margin="10,117,0,0" VerticalAlignment="Top" Width="120" SelectionMode="Multiple">
+            <ListBoxItem Name="listBoxItemFootball" >Football</ListBoxItem>
+            <ListBoxItem Name="listBoxItemBasketball" >Basketball</ListBoxItem>
+            <ListBoxItem Name="listBoxItemBaseball" >Baseball</ListBoxItem>
+            <ListBoxItem Name="listBoxItemHockey" >Hockey</ListBoxItem>
+        </ListBox>
+        <ListBox x:Name="listBoxRadiusUnits" HorizontalAlignment="Left" Height="49" Margin="365,117,0,0" VerticalAlignment="Top" Width="100">
+            <ListBoxItem Name="listBoxItemMiles" >miles</ListBoxItem>
+            <ListBoxItem Name="listBoxItemKm" >km</ListBoxItem>
+        </ListBox>
+    </Grid>
+</Window>
